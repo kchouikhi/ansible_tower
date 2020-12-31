@@ -1,0 +1,289 @@
+    1  yum -y update
+    2  ping 8.8.8.8
+    3  nmtui
+    4  clear
+    5  ping 8.8.8.8
+    6  yum -y update
+    7  ip add
+    8  yum install ssh-server
+    9  ls
+   10  dnf install openssh-server
+   11  systemctl status sshd
+   12  systemctl stop firewalld
+   13  systemctl statuss firewalld
+   14  systemctl status firewalld
+   15  systemctl restart sshd
+   16  systemctl status sshd
+   17  ip add
+   18  shutdown -now
+   19  shutdown -n
+   20  shutdown 
+   21  shutdown -c
+   22  shutdown -n
+   23  shutdonw -h now
+   24  shutdown -h now
+   25  python-virtualenv sshpass
+   26  yum -y install python-virtualenv sshpass
+   27  yum -y install python-virtualenv 
+   28  adduser user-ansible
+   29  su - user-ansible 
+   30  yum -y install python-virtualenv 
+   31   python -m ansible2.7.10  python3-virtualenv
+   32  python --version
+   33  yum -y update
+   34  yum -y install python3
+   35  su - user-ansible 
+   36  yum -y update
+   37  yum -y install epel-release
+   38  yum -y install ansible vim curl
+   39  mkdir /tmp/tower && cd  /tmp/tower
+   40  curl -k -O https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
+   41  tar xvf ansible-tower-setup-latest.tar.gz
+   42  ls
+   43  cd ansible-tower-setup-3.8.0-1/
+   44  ls
+   45  vim inventory
+   46  ./setup.sh 
+   47  ls
+   48  ip add
+   49  nmtui
+   50  ip add
+   51  nmtui
+   52  ip add
+   53  poweroff
+   54  cd /tmp/
+   55  ls
+   56  cd tower/
+   57  ls
+   58  cd ansible-tower-setup-3.8.0-1/
+   59  ls
+   60  ./setup.sh 
+   61  ip add
+   62  nmtui
+   63  ip add
+   64  poweroff
+   65  cd tm
+   66  cd /tmp
+   67  ls
+   68  cd tower/
+   69  ls
+   70  cd ansible-tower-setup-3.8.0-1/
+   71  ls
+   72  ./setup.sh 
+   73  ls
+   74  ansible --version
+   75  vi /etc/ansible/ansible.cfg
+   76  vi /etc/ansible/hosts
+   77  l
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd
+   84  ls
+   85  cd /etc
+   86  l
+   87  cd /etc/
+   88  ls
+   89  cd
+   90  ls
+   91  ansible-inventory -y --list
+   92  vim /etc/ansible/ansible.cfg
+   93  ansible --version
+   94  vi /etc/ansible/ansible.cfg
+   95  vi 
+   96  vi /etc/ansible/hosts
+   97  cd /etc/
+   98  ls
+   99  cd ansible/
+  100  ls
+  101  vim inventaire.ini
+  102  vi inventaire.ini
+  103  ansible-inventory  -i inventaire.ini  --list
+  104  ls
+  105  mkdir host_vars
+  106  ls
+  107  cd host_vars/
+  108  ls
+  109  vim db01
+  110  cd ..
+  111  ls
+  112  ansible databeses --limit db01 -m ping
+  113  ansible databases --limit db01 -m ping
+  114  ls
+  115  vi inventaire.ini 
+  116  ansible  -i inventaire.ini  --limit db01 -m ping
+  117  ansible databases --limit db01 -m ping
+  118  mv inventaire.ini inventory
+  119  ansible databases --limit db01 -m ping
+  120  ansible  --limit db01 -m ping
+  121  ansible   inventory--limit db01 -m ping
+  122  ansible   inventory --limit db01 -m ping
+  123  ansible   -e ansible_python_interpreter="/usr/bin/python3" databases  --limit db01 -m ping
+  124  ls
+  125  vi hosts
+  126  ansible   -e ansible_python_interpreter="/usr/bin/python3" -i /etc/ansible/inventory   --limit db01 -m ping
+  127  ansible  -i /etc/ansible/inventory   --limit db01 -m ping
+  128  ls
+  129  mv hosts bck
+  130  ansible   databases --limit db01 -m ping
+  131  ls
+  132  mv bck ../
+  133  ls
+  134  ansible   databases --limit db01 -m ping
+  135  mv ../bck .
+  136  ls
+  137  mv inventory hosts
+  138  ls
+  139  ansible   databases --limit db01 -m ping
+  140  ansible   -e ansible_python_interpreter="/usr/bin/python3  databases --limit db01 -m ping
+  141  ansible   -e ansible_python_interpreter="/usr/bin/python3"  databases --limit db01 -m ping
+  142  ansible   -e ansible_python_interpreter="/usr/bin/python3"  --limit db01 -m ping
+  143  ansible webservers  --limit db01 -m ping
+  144  ansible webservers  --limit web01 -m ping
+  145  ls
+  146  mv hosts inventory
+  147  mv bck  hosts
+  148  ls
+  149  vi hosts
+  150  vi /etc/hosts
+  151  ansible   databases --limit db01 -m ping
+  152  ping db01
+  153  ping bd01
+  154  vi inventory 
+  155  vi /etc/hosts
+  156  ansible   databases --limit db01 -m ping
+  157  ls
+  158  mv host ../
+  159  mv hosts ../
+  160  ls
+  161  cd ..
+  162  ls
+  163  cd ansible/
+  164  ls
+  165  mv host bck
+  166  mv hosts bck
+  167  ls
+  168  ansible   databases --limit db01 -m ping
+  169  mv inventory hosts
+  170  ansible   databases --limit db01 -m ping
+  171  ssh root@192.168.102.133
+  172  ansible   databases --limit db01 -m ping
+  173  ansible   databases --limit db01 -m ping -become_ask
+  174  ansible   databases --limit db01 -m ping -ask_become
+  175  ansible   databases --limit db01 -m ping --user root --ask-pass
+  176  ansible   databases --limit db01 -m ping -ask_become
+  177  ansible   databases --limit db01 -m ping 
+  178  ansible   databases --limit localhost -m ping 
+  179  ls
+  180  vi hosts
+  181  ansible   local  --limit localhost -m ping 
+  182  ls
+  183  rm hosts
+  184  ls
+  185  rm -rf hosts
+  186  rm -rf host_vars/
+  187  ls
+  188  mv bck hosts
+  189  ls
+  190  cd ..
+  191  cd
+  192  cd /etc/ansible/
+  193  ls
+  194  ansible-config dump --only-chaged
+  195  ansible-config dump --only-changed
+  196  ansible-doc -l ping
+  197  clear
+  198  lszeksd
+  199  ls
+  200  clear
+  201  ansible-doc -l | grep -i ping
+  202  ansible-doc ping
+  203  vi /usr/lib/python3.6/site-packages/ansible/modules/system/ping.py
+  204  vim /usr/lib/python3.6/site-packages/ansible/modules/system/ping.py
+  205  cd  /usr/lib/python3.6/site-packages/ansible/modules
+  206  ls
+  207  cd 
+  208  cd -
+  209  ls
+  210  cd network/
+  211  ls
+  212  cd ios
+  213  ls
+  214  vi _ios_interface.py 
+  215  cd ..
+  216  cd. .
+  217  CD. .
+  218  cd ..
+  219  l
+  220  ls
+  221  vi inventaire.ini
+  222  ansible all --limit db01 -i inventaire.ini  -k -m ping
+  223  ansible all --limit db01 -i inventaire.ini   -m ping
+  224  ansible-doc -l | grep -i service
+  225  ansible-doc service
+  226  **
+  227  cd
+  228  cd /etc/ansible/
+  229  ls
+  230  ansible all -m service - a "state=restarted" -i inventaire.ini 
+  231  ansible all -m service -a "state=restarted name=sshd" -i inventaire.ini 
+  232  ansible all -i inventaire.ini -m service -a "state=restarted name=sshd" -k
+  233  s
+  234  ls
+  235  cd ..
+  236  ls
+  237  cd ..
+  238  ls
+  239  cd etc
+  240  ls
+  241  cd ansible/
+  242  ls
+  243  ls -lrt 
+  244  vim inventory
+  245  ls
+  246  ansible all -i inventory -m service -a "state=restarted name=sshd" -k
+  247  ansible all -i inventory -m service -a "state=restarted name=sshd" 
+  248  vi inventory 
+  249  ansible all -i inventory --limit web01 -m service -a "state=restarted name=sshd" 
+  250  ansible all -i inventory --limit web01 -m service -a "state=restarted name=sshd" -k
+  251  ansible all -i inventory -m service -a "state=restarted name=sshd" 
+  252  ansible all -i inventory --limit db01 -m service -a "state=restarted name=sshd" -k
+  253  ansible all -i inventory -m service -a "state=restarted name=sshd" 
+  254  ansible-doc users
+  255  ansible-doc user
+  256  ansible webservers  -m user -a "name=test password=test state=resent" 
+  257  ansible webservers -i inventory   -m user -a "name=test password=test state=resent" 
+  258  ansible webservers -i inventory   -m user -a "name=test password=test state=resent" -k
+  259  ansible webservers -i inventory   -m user -a "name=test password=test state=present" -k
+  260  ssh root@web01
+  261  ansible webservers -i inventory   -m user -a "name=test password=test state=absent" -k
+  262  ssh root@web01
+  263  ansible-doc towergroup
+  264  ansible-doc -l | grep -i group
+  265  ansible-do tower_group
+  266  ansible-doc tower_group
+  267  ls
+  268  clear
+  269  ansible tower_group
+  270  ansible tower_group  --list-hosts 
+  271  ansible tower_group -i localhost  --list-hosts 
+  272  ansible tower_group -i inventory --limit web01  --list-hosts 
+  273  ansible tower_group -i inventory   --list-hosts 
+  274  vi inventory 
+  275  ansible tower_group -i inventory --limit local   --list-hosts 
+  276  ansible tower_group  local   --list-hosts 
+  277  ansible local tower_group   --list-hosts 
+  278  ansible webservers -i inventory  -m group -a "name=test" -k
+  279  ansible webservers -i inventory  -m group -a "name=test state=absent" -k
+  280  ansible all -i inventory -m group -a "name=test state=present" -k
+  281  ansible all -i inventory -m group -a "name=test state=absent" -k
+  282  ansible all -i inventory -m package -a "name=httpd state=present" -k
+  283  ansible webservers  -i inventory -m package -a "name=httpd state=present" -k
+  284  ansible webservers  -i inventory -m package -a "name=httpd state=status" -k
+  285  ansible webservers  -i inventory -m yum -a "name=httpd state=status" -k
+  286  ansible webservers  -i inventory -m yum -a "name=httpd state=present" -k
+  287  hitory
+  288  history
+  289  history >> history.txt
