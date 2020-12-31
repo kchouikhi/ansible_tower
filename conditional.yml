@@ -1,0 +1,25 @@
+---
+- name: new users are created/deleted
+  hosts: all
+  become: true
+  vars:
+          web_users:
+                  - member
+                  - admin
+                  - developer
+
+  tasks:
+          - name: Create/delete database users
+            user:
+              name: "{{ item }}"
+              state: absent
+            loop: "{{ db_users }}"
+            when: "'databases' in group_names"
+
+          - name: Create database users
+            user:
+              name: "{{ item }}"
+              state: absent
+            loop: "{{ web_users }}"
+            when: "'webservers' in group_names"
+
