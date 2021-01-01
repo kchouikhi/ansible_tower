@@ -1,6 +1,6 @@
 ---
 - name: install wget
- apt:
+ yum:
  name: wget
  state: latest
  update_cache: yes
