@@ -1,6 +1,6 @@
 - name: Patch OS playbook
   hosts: all
   tasks:
-    - name: Patching Node ansible tower
+    - name: Patching Node ansible /test de mise a jour instantané avec ansible tower project
       debug:
         msg: "Patched centos by KARIM_CHOUIKHI. est dans la version: {{ ansible_distribution_version }}"
