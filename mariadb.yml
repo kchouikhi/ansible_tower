@@ -2,7 +2,7 @@
  - hosts: all
    user: root
    vars:
-     mysql_root_password: passwd
+     mysql_root_password: toor
    tasks:
     - name: Install MYSQL
       yum:
