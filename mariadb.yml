@@ -1,12 +1,11 @@
 --- # Install mariadb via ansible on centOS
  - hosts: all
-   user: root
    vars:
      mysql_root_password: toor
    tasks:
     - name: Install MYSQL
       yum:
-        name: mariadb-server #debian: mysql-server
+        name: mariadb-server
         state: present
     - name: Install the Python MySQL Support Libraries
       yum: pkg=MySQL-python state=latest
