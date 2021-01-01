@@ -1,2 +1,3 @@
-# aplaybooks-patch-os
-Demo Ansible Playbooks to Patch OS
+# some test stuff ansible tower by karim chouikhi-os
+Demo Ansible Playbooks to GIT/vmware test machine
+Bye
