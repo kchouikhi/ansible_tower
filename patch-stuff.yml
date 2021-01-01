@@ -1,6 +1,18 @@
-- name: Patch OS stuff playbook
+- name: details distrubtion
   hosts: all
   tasks:
-    - name: Patching Red Hat Enterprise Linux
+    - name: lunix dxdiag
       debug:
-        msg: "Patched Red Hat Enterprise Linux. Now at: {{ ansible_distribution_version }}"
+        msg: "ip address V4: {{ ansible_all_ipv4_addresses }}"
+        msg: "ip address V6: {{ ansible_all_ipv6_addresses }}"
+        msg: "architecture: {{ ansible_architecture }}"
+        msg: "date de  bios: {{ ansible_bios_date }}"
+        msg: "version bios: {{ ansible_bios_version }}"
+        msg: "ip address: {{ ansible_date_time }}"
+        msg: "nom de hote: {{ ansible_devices }}"
+        msg: "nom de distrubtion: {{ ansible_distribution }}"
+        msg: "version de systéme lunix: {{ ansible_distribution_version }}"
+        msg: "type de processeer AMD/INTEL: {{ ansible_processor }}"
+        msg: "RAM: {{ ansible_memtotal_mb }}"
+        msg: "version python: {{ ansible_python_version }}"
+        
