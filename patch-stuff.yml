@@ -4,26 +4,37 @@
     - name: lunix dxdiag
       debug:
         msg: "ip address V4: {{ ansible_all_ipv4_addresses }}"
+    - name: lunix dxdiag
       debug:
         msg: "ip address V6: {{ ansible_all_ipv6_addresses }}"
+    - name: lunix dxdiag
       debug:
         msg: "architecture: {{ ansible_architecture }}"
+    - name: lunix dxdiag
       debug:
         msg: "date de  bios: {{ ansible_bios_date }}"
+    - name: lunix dxdiag
       debug:
         msg: "version bios: {{ ansible_bios_version }}"
+    - name: lunix dxdiag
       debug:
         msg: "ip address: {{ ansible_date_time }}"
+    - name: lunix dxdiag
       debug:
         msg: "nom de hote: {{ ansible_devices }}"
+    - name: lunix dxdiag
       debug:
         msg: "nom de distrubtion: {{ ansible_distribution }}"
+    - name: lunix dxdiag
       debug:
         msg: "version de systéme lunix: {{ ansible_distribution_version }}"
+    - name: lunix dxdiag
       debug:
         msg: "type de processeer AMD/INTEL: {{ ansible_processor }}"
+    - name: lunix dxdiag
       debug:
         msg: "RAM: {{ ansible_memtotal_mb }}"
+    - name: lunix dxdiag
       debug:
         msg: "version python: {{ ansible_python_version }}"
         
